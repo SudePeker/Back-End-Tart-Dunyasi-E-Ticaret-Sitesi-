@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEPET</title>
+    <link rel="icon" href="{% static 'img/favicon.png' %}">
+    <!-- Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/2d456663f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'sepet-style.css'%}">
+</head>
+<body>
+  {% include 'includes/navbar.html'%}
+                <!-- Sepet -->
+              <div class="container">
+                <div class="row m-auto mt-3 mb-3 dıs-cizgi">
+                    <div class="col-12">
+                       <div class="row text-white text-center bg-black">
+                        <div class="col-5">
+                            <h5>ÜRÜN</h5>
+                        </div>
+                        <div class="col-2">
+                            <h5>FİYAT</h5>
+                        </div>
+                        <div class="col-2">
+                            <h5>ADET</h5>
+                        </div>
+                        <div class="col-3">
+                            <h5>TOPLAM TUTAR</h5>
+                        </div>
+                       </div>
+                    </div>
+                    <hr>
+                    <div class="col-12 text-center">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img class="me-5 mb-3" src="{% static 'urun/minicup.png' %}" alt="sepet" style="width: 20%;">
+                                    <p><b>Mini Cup (3,5 CM)</b> <br><i>Ürün Id:00001</i> </p>
+                                </div>
+                            </div>
+                            <div class="col-2 mt-4">
+                                <p>100 TL</p>
+                            </div>
+                            <div class="col-2  mt-4">
+                               <button class="border-0">+</button>
+                               <input class="bir" type="text" size="1">
+                               <button class="border-0">-</button>
+                            </div>
+                            <div class="col-2 mt-4">
+                                <p class="text-center">100  TL</p>   
+                              </div>
+                              <div class="col-1 mt-4">
+                                <button class="border-0 text-white" style="min-width: 15%;background-color: #a0385a;">X</button>
+                              </div>
+                       </div>
+                    </div>
+                    <hr>
+                    <div class="col-12 text-center">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img class="me-5 mb-3" src="{% static 'urun/miniküp.png' %}" alt="sepet" style="width: 20%;">
+                                    <p><b>Mini Küp (4x4 CM)</b> <br><i>Ürün Id:00002</i> </p>
+                                </div>
+                            </div>
+                            <div class="col-2 mt-4">
+                                <p>100 TL</p>
+                            </div>
+                            <div class="col-2  mt-4">
+                               <button class="border-0">+</button>
+                               <input class="bir" type="text" size="1">
+                               <button class="border-0">-</button>
+                            </div>
+                            <div class="col-2 mt-4">
+                                <p class="text-center">100  TL</p>
+                              </div>
+                              <div class="col-1 mt-4">
+                                <button class="border-0 text-white" style="min-width: 15%;background-color: #a0385a;">X</button>
+                              </div>
+                       </div>
+                    </div>
+                    <hr>
+                    <div class="col-12 text-center">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img class="me-5 mb-3" src="{% static 'urun/yarimküre.png' %}" alt="sepet" style="width: 20%;">
+                                    <p><b>Yarım Küre (4 CM)</b> <br><i>Ürün Id:00003</i> </p>
+                                </div>
+                            </div>
+                            <div class="col-2 mt-4">
+                                <p>100 TL</p>
+                            </div>
+                            <div class="col-2  mt-4">
+                               <button class="border-0">+</button>
+                               <input class="bir" type="text" size="1">
+                               <button class="border-0">-</button>
+                            </div>
+                            <div class="col-2 mt-4">
+                                <p class="text-center">100  TL</p>
+                              </div>
+                              <div class="col-1 mt-4">
+                                <button class="border-0 text-white" style="min-width: 15%;background-color: #a0385a;">X</button>
+                              </div>
+                       </div>
+                    </div>
+                    <hr>
+                    <div class="col-12 text-center">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img class="me-5 mb-3" src="{% static 'urun/papatya.png' %}" alt="sepet" style="width: 20%;">
+                                    <p><b>Papatya (4,5 CM)</b> <br><i>Ürün Id:00005</i> </p>
+                                </div>
+                            </div>
+                            <div class="col-2 mt-4">
+                                <p>100 TL</p>
+                            </div>
+                            <div class="col-2  mt-4">
+                               <button class="border-0">+</button>
+                               <input class="bir" type="text" size="1">
+                               <button class="border-0">-</button>
+                            </div>
+                            <div class="col-2 mt-4">
+                                <p class="text-center">100  TL</p>
+                              </div>
+                              <div class="col-1 mt-4">
+                                <button class="border-0 text-white" style="min-width: 15%;background-color: #a0385a;">X</button>
+                              </div>
+                       </div>
+                    </div>
+                    <hr>
+                    <div class="col-12 text-center">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img class="me-5 mb-3" src="{% static 'urun/medium.png' %}" alt="sepet" style="width: 20%;">
+                                    <p><b>Medium (6 Cm)</b> <br><i>Ürün Id:00008</i> </p>
+                                </div>
+                            </div>
+                            <div class="col-2 mt-4">
+                                <p>100 TL</p>
+                            </div>
+                            <div class="col-2  mt-4">
+                               <button class="border-0">+</button>
+                               <input class="bir" type="text" size="1">
+                               <button class="border-0">-</button>
+                            </div>
+                            <div class="col-2 mt-4">
+                                <p class="text-center">100 TL</p>
+                              </div>
+                              <div class="col-1 mt-4">
+                                <button class="border-0 text-white" style="min-width: 15%;background-color: #a0385a;">X</button>
+                              </div>
+                       </div>
+                    </div>
+              </div>
+              </div>
+            
+              <!-- Sepet Alt1 -->
+              <div class="container">
+                <h4>Kupon Kullanmak İster Misiniz?</h4>
+                <i>Kullanmak istediğiniz bir indirim kuponunuz veya hediye çekiniz olup olmadığını seçiniz. Ayrıca kargo ücretinide buradan hesaplayabilirsiniz.</i>
+                <div class="row">
+                    <div class="col-lg-6 md-12 sm-12 mt-2 mb-3">
+                        <div class="card birinci border border-1 border-secondary">
+                           <div class="checkbox mt-4 ms-3">
+                             <input type="checkbox"> İndirim Kuponu Kullanma <br>
+                             <input type="checkbox"> Hediye Çeki Kullanma <br>
+                             <input type="checkbox"> Kargo Ücreti Hesaplama <br>
+                           </div>
+                            <div class="mt-4 mb-4"> 
+                              <div class="kod2 d-inline">
+                                <label class="ms-3 sehir kod"> Şehir Seçiniz :</label>
+                                <select class="me-3 kod">
+                                    <option value="sehir">-------------------------</option>
+                                    <option value="sehir">Ankara</option>
+                                    <option value="sehir">Antalya</option>
+                                    <option value="sehir">Bolu</option>
+                                    <option value="sehir">Düzce</option>
+                                    <option value="sehir">İstanbul</option>
+                                </select>
+                              </div>
+                                <div class="kod2 d-inline">
+                                <label class="kod">Kodu Giriniz:</label>
+                                 <input type="text" class="kod" size="10">
+                                 </div>
+                                 <input type="submit" class="btn ilk btn-send me-3 ms-3" value="Teklif Al">
+                                <input type="submit" class="btn ilk btn-send" value="Devam Et">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sepet Alt2 -->
+                    <div class="col-lg-6  md-12 sm-12 mt-2 mb-2">
+                        <div class="card border border-secondary">
+                                <div class="row p-3">
+                                    <div class="card-body ">
+                                    <div class="col-12 d-flex justify-content-between mb-2" style="height: 30px; background-color: #dadedc; border-radius: 15px; padding: 0 20px 0 20px;">
+                                        <p>Tutar</p>
+                                        <p>500 Tl</p>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-between mb-2 tutar" style="height: 30px; background-color: #dadedc; border-radius: 15px; padding: 0 20px 0 20px;">
+                                        <p>Kargo</p>
+                                        <p>12 Tl</p>
+                                    </div> 
+                                    <div class="col-12 d-flex justify-content-between mb-2 tutar" style="height: 30px; background-color:#dadedc;  border-radius: 15px; padding: 0 20px 0 20px;">
+                                        <p>KDV</p>
+                                        <p>%7</p>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-between mb-2 tutar" style="height: 30px; background-color: #dadedc; border-radius: 15px; padding: 0 20px 0 20px;">
+                                        <p>Toplam Tutar</p>
+                                        <p>547 Tl</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mb-3 ms-3">
+                                        <input type="submit" class="btn btn-send" value="Güncelle">
+                                        <input type="submit" class="btn btn-send ms-3" value="Ödeme">
+                                    </div>
+                                </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+{% include 'includes/footer.html'%}
+              <script src="{% static 'bootstrap.bundle.min.js'%}"></script>
+              
+</body>
+</html>

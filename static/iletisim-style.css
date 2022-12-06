@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #dadedc;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ed5485;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #a7aba9;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #a0385a;
+    border: 1px solid #ed5485;
+}
+
+/* Navbar */
+nav ul li a:hover{
+    background-color: #ed5485;
+    color:  #a0385a;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px white;
+}
+.border{
+    border-right: 3px solid white;
+    padding-right: 4px;
+}
+.nav-sosyal a,
+.fa-brands {
+    color: white;
+    text-decoration: none;
+}
+input:focus{
+    outline:5px solid #a0385a !important;
+}
+textarea:focus{
+    outline:5px solid #a0385a !important;
+}
+.arama{
+    margin-left: 200px;
+   
+}
+.arama button,
+.nav-item .btn{
+    background-color: #ed5485;
+}
+.arama button:hover{
+    background-color: #ed5485;
+    color:  #a0385a;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px white;
+}
+
+.baslik{
+    color: #ed5485;
+    font-size: 35px;
+}
+ 
+.gonder{
+    border: 2px solid #ed5485;
+    background-color: #a0385a;
+    color: white;
+
+}
+.gonder:hover{
+    background-color: #ed5485;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #a0385a;
+}
+
+.card{
+    border: 2px solid #a0385a;
+    border-radius: 15px;
+  }
+/* Ekran boyutu*/
+@media screen and (max-width:1300px) {
+    .arama{
+        margin-left:80px;
+        width: 400px;
+    } 
+}
+@media screen and (max-width:1105px) {
+    .arama{
+        margin-left:50px;
+        width: 300px;
+    }
+}
+@media screen and (max-width:999px) {
+    .arama{
+        width: 80%;
+        margin: auto;
+        display: flex;
+    }
+    nav ul li{
+        padding: 3px 15px;
+        margin: auto;
+        }
+    .aramabtn{
+        display: flex;
+    }
+}

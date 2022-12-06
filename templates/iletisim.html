@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İLETİŞİM</title>
+    <link rel="icon" href="{% static 'img/favicon.png' %}">
+    <!-- Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/2d456663f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'iletisim-style.css'%}">
+</head>
+<body>
+  {% include 'includes/navbar.html'%}
+
+  {% if messages %}
+        {% for mesaj in messages %}
+        <div class="alert alert-{{mesaj.tags}} text-center">
+            {{mesaj}}
+        </div>
+    {% endfor %}
+      
+    {% else %}
+    {% endif %}
+
+              <div class="container">
+                <div class="row">
+                  <!-- İletişim -->
+                    <div class="col-lg-8 md-12 sm-12 mt-5">
+                        <form id="" method="POST">
+                          {% csrf_token %}
+                          <h3 class="text-center baslik">İLETİŞİM :</h3>
+                          <hr>
+                          <div class="messages"></div>
+                          <div class="controls">
+                              <div class="row">
+                                  <div class="col-md-6">
+                                          <label for="">Adınız *</label>
+                                          <input id="" type="text" name="ad" class="form-control" placeholder="Lütfen adınızı yazın *" required="required" data-error="Adınız gerekli.">
+                                  </div>
+                                  <div class="col-md-6">
+                                          <label for="">Soyadınız *</label>
+                                          <input id="" type="text" name="soyad" class="form-control" placeholder="Lütfen soyadınızı yazın *" required="required" data-error="Soyadınız gerekli.">
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                          <label for="">E-Posta Adresiniz *</label>
+                                          <input id="" type="email" name="eposta" class="form-control" placeholder="Lütfen E-Posta adresinizi yazın *" required="required" data-error="Geçerli bir E-Posta gerekli.">
+                                  </div>
+                                  <div class="col-md-6">
+                                          <label for="">Telefon Numaranız</label>
+                                          <input id="" type="tel" name="telefon" class="form-control" placeholder="Lütfen telefon numaranızı yazın">
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-12">
+                                          <label for="">Mesajınız *</label>
+                                          <textarea id="" name="mesaj" class="form-control" placeholder="Lütfen mesajınızı yazın *" rows="4" required="required" data-error="Lütfen mesajınızı yazın."></textarea>
+                                  </div>
+                                  <div class="col-md-12 d-flex justify-content-end">
+                                      <input type="submit" class="gonder btn btn-send mt-3" value="Mesajı Gönder">
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                    </div>
+                    <!-- İletişim Bilgileri -->
+                    <div class="col-lg-4 md-12 sm-12 mt-5 text-center">
+                      <h3 class="baslik">İletişim Bilgileri</h3>
+                      <hr>
+                      <div class="card">
+                        <p class="mt-3">Tart Dünyası <br>
+                        <b>Adres:</b> Yayla, 13/B, 1481. Cd, 06220 Keçiören/Ankara <br>
+                        <b> Telefon: </b>+09 555 555 55 55  <br>
+                        <b>Email:</b> info@tartdunyasi.com
+                      </p>
+                      <div class="mt-5 mb-4">
+                        <hr>
+                      <h5 class="text-center">Sosyal Medya</h5>
+                      <a href="https://www.instagram.com/tart__dunyasi/" target="_blank"><i class="fa-brands fa-instagram text-black"></i></a>
+                      <a href="https://tr-tr.facebook.com/tartdunyasi/" target="_blank"><i class="fa-brands fa-facebook text-black ms-3"></i></a>
+                    </div>
+                    </div>
+                      </div>
+                    </div>
+                </div>
+
+                
+{% include 'includes/footer.html'%}
+    <script src="{% static 'bootstrap.bundle.min.js'%}"></script>
+</body>
+</html>

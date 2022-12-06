@@ -1,0 +1,205 @@
+*{
+  box-sizing: border-box;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  background-color: #dadedc;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ed5485;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-track{
+  background-color: #a7aba9;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #a0385a;
+  border: 1px solid #ed5485;
+}
+
+/* Navbar */
+nav ul li a:hover{
+  background-color: #ed5485;
+  color:  #a0385a;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px white;
+}
+.border{
+  border-right: 3px solid white;
+  padding-right: 4px;
+}
+.nav-sosyal a,
+.fa-brands {
+  color: white;
+  text-decoration: none;
+}
+input:focus{
+  outline:5px solid #a0385a !important;
+}
+.arama{
+  margin-left: 200px;
+ 
+}
+.arama button,
+.nav-item .btn{
+  background-color: #ed5485;
+}
+.arama button:hover{
+  background-color: #ed5485;
+  color:  #a0385a;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px white;
+}
+.baslik{
+  color: #ed5485;
+  font-size: 35px;
+}
+/* Liste */
+ul li a{
+  text-decoration: none;
+}
+/* Accordion */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.aktif, .accordion:hover {
+  background-color: #ed5485;
+}
+.panel {
+  border: 1px solid #a0385a;
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '🧁';
+  margin: auto;
+  font-size: 10px;
+  color: #a0385a;
+  float: right;
+  margin-left: 5px;
+}
+.aktif:after {
+  content: "🍴";
+}
+/* Afiş */
+.afis{
+  background-color: #a0385a;
+  border: 2px solid #ed5485;
+  border-radius: 15px;
+}
+/* Slayt */
+.slayt{
+  background-color: #a0385a;
+  border: 2px solid #ed5485;
+  border-radius: 15px;
+}
+/* Card-Body */
+.card{
+  border: none;
+  border-radius: 15px;
+}
+.card-body{
+  border: 2px solid #a0385a;
+  border-radius: 15px;
+}
+.card-body img{
+  width: 75%;
+}
+.btn{
+  border: 2px solid #ed5485;
+  background-color: #a0385a;
+  color: white;
+
+}
+.btn:hover{
+  background-color: #ed5485;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px #a0385a;
+}
+.yazi{
+  background-color: #a0385a;
+  color: white;
+  border: 1px solid #ed5485;
+  border-radius: 15px;
+}
+
+/* Ekran boyutu*/
+@media screen and (max-width:1300px) {
+  .arama{
+      margin-left:80px;
+      width: 400px;
+  } 
+}
+@media screen and (max-width:1105px) {
+  .arama{
+      margin-left:50px;
+      width: 300px;
+  }
+}
+@media screen and (max-width:1000px){
+  .card{
+    margin: auto;
+    width: 80%;
+  }
+  .afis{
+    width: 85% !important;
+    margin: auto;
+    margin-left: 7%;
+  }
+  .baslik{
+    margin-top: 25px
+  }
+}
+@media screen and (max-width:999px) {
+  .arama{
+      width: 80%;
+      margin: auto;
+      display: flex;
+  }
+  nav ul li{
+      padding: 3px 15px;
+      margin: auto;
+      }
+  .aramabtn{
+      display: flex;
+  }
+}
+
+
+@media screen and (max-width:992px){
+  .afis{
+    width: 50% !important;
+    margin: auto;
+    margin-left: 25%;
+  }
+  .slayt{
+    width: 70%;
+    margin: auto;
+  }
+  span{
+    color: black;
+    background-color: #a0385a;
+  }
+  .card{
+    width: 60% !important;
+  }
+
+}
