@@ -6,7 +6,7 @@ from django.db.models import Q
 
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'anasayfa.html')
 
 
 def urunler(request):
